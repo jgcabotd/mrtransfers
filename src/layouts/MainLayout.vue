@@ -35,7 +35,7 @@
       <router-view />
     </q-page-container>
 
-    <q-footer elevated class="bg-primary text-white">
+    <q-footer elevated class="bg-grey-1 text-white">
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
