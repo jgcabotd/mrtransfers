@@ -1,21 +1,11 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+  <q-layout view="lHh lpR lFf">
+    <q-header elevated class="bg-grey-1">
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
+        <q-img src="~/assets/logo_1_linea.png" style="max-width:300px" width="55%" />
+        <q-toolbar-title> BookInAdvance </q-toolbar-title>
 
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
+        <q-btn flat dense round icon="menu" color="primary" aria-label="Menu" @click="toggleLeftDrawer" />
       </q-toolbar>
     </q-header>
 
@@ -23,6 +13,8 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
+      side="right"
+      class="bg-grey-1"
     >
       <q-list>
         <q-item-label
@@ -42,6 +34,17 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <q-footer elevated class="bg-primary text-white">
+      <q-toolbar>
+        <q-toolbar-title>
+          <q-avatar>
+            <img src="~/assets/logo_peq_blanco.png" />
+          </q-avatar>
+        
+        </q-toolbar-title>
+      </q-toolbar>
+    </q-footer>
   </q-layout>
 </template>
 
