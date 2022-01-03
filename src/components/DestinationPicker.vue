@@ -5,7 +5,7 @@
     v-model="react.destination"
     use-input
     input-debounce="0"
-    label="Destino"
+    :label="label"
     :options="react.options"
     @filter="filterFn"
     behavior="dialog"
@@ -43,6 +43,7 @@ const http = new Http();
 
 export default defineComponent({
   name: "DestinationPicker",
+  props:["label"],
   setup() {
     return {
       react: ref({

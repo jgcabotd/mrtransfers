@@ -69,7 +69,7 @@
 <script>
 import { ref } from "vue";
 import { defineComponent } from "vue";
-import DatePicker from "../components/DatePicker.vue";
+import DatePicker from "./PeriodDatePicker.vue";
 
 import DestinationPicker from "../components/DestinationPicker.vue";
 import PaxesOnRoom from "src/components/PaxesOnRoom.vue";
